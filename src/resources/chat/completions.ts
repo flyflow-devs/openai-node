@@ -855,6 +855,17 @@ export interface ChatCompletionCreateParamsBase {
    * [Learn more](https://platform.openai.com/docs/guides/safety-best-practices/end-user-ids).
    */
   user?: string;
+
+  /**
+   * Unique tags to associate with the saved response
+   */
+  tags?: Array<string> | null ;
+
+
+  /**
+   * Whether the request should load and save data in the background and return immediately
+   */
+  background?: boolean | null;
 }
 
 export namespace ChatCompletionCreateParams {
